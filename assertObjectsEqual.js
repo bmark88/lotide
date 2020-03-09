@@ -102,5 +102,7 @@ const assertObjectsEqual = (actual, expected) => {
   }
 };
 
-assertObjectsEqual(cd, dc);
-assertObjectsEqual(cd, cd2);
+// assertObjectsEqual(cd, dc);
+// assertObjectsEqual(cd, cd2);
+
+module.exports = assertObjectsEqual;

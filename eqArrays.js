@@ -12,4 +12,4 @@ const eqArrays = (actual, expected) => {
   return true;
 };
 
-module.exports = eqArrays
+module.exports = eqArrays;
