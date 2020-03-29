@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const eqArrays = require('../eqArrays')
+const eqArrays = require('../eqArrays');
 
 //TEST CODE
 // console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true

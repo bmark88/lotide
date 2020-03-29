@@ -1,25 +1,5 @@
-// FUNCTION IMPLEMENTATION WITH TEMPLATE LITERALS
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = (actual, expected) => {
-  if (actual.length !== expected.length) {
-    return false;
-  }
-
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-    
-  }
-  return true;
-};
+const { assertEqual } = require('./assertEqual');
+const { eqArrays } = require('./eqArrays');
 
 const eqObjects = (object1, object2) => {
   const keysObject1Array = Object.keys(object1);
@@ -47,10 +27,6 @@ const eqObjects = (object1, object2) => {
 
   return true;
 };
-
-
-
-
 
 // const ab = {
 //   a: "1",
@@ -92,4 +68,4 @@ const eqObjects = (object1, object2) => {
 // assertEqual(eqObjects(cd, dc), true);
 // assertEqual(eqObjects(cd, cd2), false);
 
-module.exports = eqObjects;
+module.exports = { eqObjects };
